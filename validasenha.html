@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verificador de senha</title>
+	<script>
+		function verificarSenha() {
+			var senha = document.getElementById("senha").value;
+			
+			if (senha != "senha_correta") {
+				alert("Senha incorreta!");
+				return false;
+			}
+			
+			window.location.href = "outra_pagina.html";
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<h1>Verificação de senha</h1>
+	<label for="senha">Senha:</label>
+	<input type="password" id="senha" name="senha"><br><br>
+	<button onclick="verificarSenha()">Entrar</button>
+</body>
+</html>

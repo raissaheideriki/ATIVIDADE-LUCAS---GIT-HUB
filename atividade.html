@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+            <meta charset="UTF-8"/>
+            <script> 
+                // obriga esperar o carregamento da tela
+                $(function(){ // Adiciona funções
+                    $('#red').on('click', function(){ 
+                        $('body').css ('background-color', 'red');
+                    })
+
+                    $('#verde').on('click', function(){
+                        $('body').css ('background-color', 'green');
+                    })
+                
+                    $('#roxo').on('click', function(){
+                        $('body').css ('background-color', 'purple');
+
+                    })
+                    
+                    $('#amarelo').on('click', function(){ 
+                        $('body').css ('background-color', 'yellow');
+                    })
+
+                    $('#azul').on('click', function(){
+                        $('body').css ('background-color', 'blue');
+                    })
+                });
+            </script>
+    </head>
+
+        <body>
+            <button id="red">vermelho</button>
+            <button id="verde">verde</button>
+            <button id="roxo">roxo</button>
+            <button id="amarelo">amarelo</button>
+            <button id="azul">azul</button>
+        </body> 
+</html>

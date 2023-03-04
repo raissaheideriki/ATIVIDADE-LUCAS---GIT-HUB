@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+            <meta charset="UTF-8"/>
+            <script> 
+                // obriga esperar o carregamento da tela
+                $(function(){ // Adiciona funções
+                    $('#teste').on('click', function(){ 
+                        let valor = $('#campo').val(); // Insere um valor no campo
+                        alert(valor); // Insere um alerta
+                    })
+                });
+            </script>
+        </head>
+
+        <body>
+            <input type="text" id="campo">
+            <button id="teste">Teste</button>
+        </body>
+</html>
